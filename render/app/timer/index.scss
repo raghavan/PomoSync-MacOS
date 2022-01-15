@@ -1,0 +1,123 @@
+#wrapper > #timer {
+  height: 50%;
+  width: 100%;
+
+  #time {
+    height: calc(100% - 35px);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 30vw;
+    }
+  }
+
+  #form {
+    height: 35px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #mode {
+      height: 35px;
+      width: 35px;
+
+      border: 2px solid #202733;
+      border-radius: 10px;
+
+      overflow: hidden;
+
+      #wrapper {
+        width: 200%;
+        height: 100%;
+        display: flex;
+
+        transition: transform 150ms ease;
+
+        &.free-count {
+          transform: translateX(-50%);
+        }
+
+        #count-down {
+          cursor: pointer;
+
+          height: 100%;
+          width: 50%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            height: 25px;
+          }
+        }
+
+        #free-count {
+          cursor: pointer;
+
+          height: 100%;
+          width: 50%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    #activity {
+      width: calc(100% - 180px);
+
+      input {
+        height: 35px;
+        width: 100%;
+        border: 2px solid #202733;
+        border-radius: 10px;
+
+        padding: 0 10px;
+
+        caret-color: #202733;
+        color: #202733;
+        font-weight: 600;
+
+        text-align: center;
+
+        &::placeholder {
+          color: #202733;
+          font-weight: 600;
+        }
+      }
+    }
+
+    #start {
+      button {
+        height: 35px;
+        width: 125px;
+
+        background: #00DAF7;
+        color: white;
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.50);
+        }
+
+        &.stop {
+          background: #FF5E57;
+        }
+      }
+    }
+  }
+}
