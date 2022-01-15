@@ -39,7 +39,7 @@ class Api {
       this.base(this.table).select({
         maxRecords: 1,
         view: "Grid view",
-        fields: ["activity", "start-time", "end-time"],
+        fields: ["activity", "start-time", "stop-time"],
       }).firstPage((error) => {
         if (error) return resolve({
           ok: false,
