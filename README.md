@@ -1,5 +1,5 @@
 # ActivityTracker
-> MacOS activity sync to airtable
+App to run pomodoro timers and sync activities to your airtable. Supported on Mac and Windows desktop.
 
 # Requirements
 > - Install [nodejs](https://nodejs.org/en/download/)
